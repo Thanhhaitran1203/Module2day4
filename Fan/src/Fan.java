@@ -12,7 +12,37 @@ public class Fan {
         this.radius = 5;
         this.color = "blue";
     }
-    public void setSpeed(){
-
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
+    public void setOn(){
+        this.on = true;
+    }
+    public void setRadius(double radius){
+        this.radius = radius;
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+    public int getSpeed(){
+        return this.speed;
+    }
+    public boolean getOn(){
+        return this.on;
+    }
+    public double getRadius(){
+        return this.radius;
+    }
+    public String getColor(){
+        return this.color;
+    }
+    public String toString(){
+        String result = "";
+        if(getOn ()){
+            result ="\t" + getSpeed () + getColor () + getRadius () + " fan is on";
+        }else{
+            result ="\t" + getColor () + getRadius () + " fan is off";
+        }
+        return result;
     }
 }
