@@ -3,7 +3,7 @@ import java.time.LocalTime;
 
 public class StopWatch {
     LocalTime startTime, endTime;
-    public static void main(String[] args) {
+    public StopWatch() {
 
     }
     public StopWatch(LocalTime startTime,LocalTime endTime){
